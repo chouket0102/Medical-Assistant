@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Voice Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 Medical Voice Assistant</h1>
+        <p class="subtitle">Your AI-powered medical consultation companion</p>
+        
+        <div id="status" class="status">Ready to connect...</div>
+        
+        <div class="logo-container">
+            <img src="/static/logo.gif" 
+                 alt="Medical Assistant Logo" 
+                 class="logo"/>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn" disabled>
+                <span class="mic-icon">🎤</span>
+                Start Conversation
+            </button>
+            <button id="stopBtn" disabled>
+                <span class="mic-icon">⏹️</span>
+                Stop Recording
+            </button>
+        </div>
+        
+        <div class="card" id="transcript">
+            <h3>Your Question</h3>
+            <div class="content">Speak your medical question...</div>
+        </div>
+        
+        <div class="card" id="response">
+            <h3>Assistant Response</h3>
+            <div class="content">Assistant response will appear here...</div>
+        </div>
+    </div>
+    
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
